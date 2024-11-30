@@ -1,197 +1,442 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Design Course</title>
-    
+
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            color: #2c3e50;
-            font-weight: bold;
-        }
-        .tech-card {
-            transition: transform 0.3s ease;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-            text-align: center;
-        }
-        .tech-card:hover {
-            transform: scale(1.05);
-        }
-        .tech-icon {
-            max-width: 100px;
-            margin-bottom: 15px;
-        }
-        .student-card {
-            transition: transform 0.3s ease;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-        }
-        .student-card:hover {
-            transform: scale(1.05);
-        }
-        .student-avatar {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-    </style>
-</head>
-<body>
-    <!-- Навігація -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Web Design Course</a>
-        </div>
+      <div class="p-3 fixed">
+        <a target="_blank" class="navbar-brand" href="https://logikaschool.com/"
+          ><img src="logika.svg" alt="Logika"
+        /></a>
+      </div>
     </nav>
 
-    <!-- Секція Веб-дизайн -->
     <section class="container my-5">
-        <h2 class="section-title animate__animated animate__fadeIn">Технології, які ми вивчали</h2>
-        <div class="row">
-            <!-- HTML -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="tech-icon mx-auto d-block" alt="HTML">
-                    <h4>HTML</h4>
-                    <p>Вивчили структуру веб-сторінок, семантичну розмітку, основні теги та створення логічної структури контенту.</p>
-                </div>
-            </div>
-
-            <!-- CSS -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="tech-icon mx-auto d-block" alt="CSS">
-                    <h4>CSS</h4>
-                    <p>Опанували стилізацію, адаптивну верстку, флексбокс та grid-розмітку, медіа-запити та сучасні техніки дизайну.</p>
-                </div>
-            </div>
-
-            <!-- Figma -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="tech-icon mx-auto d-block" alt="Figma">
-                    <h4>Figma</h4>
-                    <p>Навчились створювати дизайн-макети, працювати з компонентами, прототипуванням та UI/UX принципами.</p>
-                </div>
-            </div>
+      <h2
+        style="font-size: 42px"
+        class="section-title animate__animated animate__fadeIn"
+      >
+        Технології, які ми вивчали
+      </h2>
+      <div class="row">
+        <!-- HTML -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="HTML"
+            />
+            <h4>HTML</h4>
+            <p>
+              Вивчили структуру веб-сторінок, семантичну розмітку, основні теги
+              та створення логічної структури контенту.
+            </p>
+          </div>
         </div>
+
+        <!-- CSS -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="CSS"
+            />
+            <h4>CSS</h4>
+            <p>
+              Опанували стилізацію, адаптивну верстку, флексбокс та
+              grid-розмітку, медіа-запити та сучасні техніки дизайну.
+            </p>
+          </div>
+        </div>
+
+        <!-- Figma -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Figma"
+            />
+            <h4>Figma</h4>
+            <p>
+              Навчились створювати дизайн-макети, працювати з компонентами,
+              прототипуванням та UI/UX принципами.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 30px"
+          class="col-md-4"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Figma"
+            />
+            <h4>Github</h4>
+            <p>
+              Навчились створювати дизайн-макети, працювати з компонентами,
+              прототипуванням та UI/UX принципами.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Секція Учнів -->
     <section class="container my-5">
-        <h2 class="section-title animate__animated animate__fadeIn">Наші талановиті учні</h2>
-        <div class="row">
-            <!-- Картка учня 1 -->
-            <div class="col-md-4 mb-4" data-aos="zoom-in">
-                <div class="student-card text-center">
-                    <img src="/api/placeholder/200/200" class="student-avatar mx-auto" alt="Аватар учня">
-                    <h4>Максим П.</h4>
-                    <p>Надзвичайно творчий та цілеспрямований учень. За час навчання створив власне портфоліо та два мінімальних проєкти. Виявляє великий інтерес до Frontend розробки.</p>
-                    <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
-                </div>
-            </div>
-
-            <!-- Картка учня 2 -->
-            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="student-card text-center">
-                    <img src="/api/placeholder/200/200" class="student-avatar mx-auto" alt="Аватар учня">
-                    <h4>Анна К.</h4>
-                    <p>Надзвичайно креативна особистість з чудовим відчуттям дизайну. Під час курсу розробила унікальний дизайн-макет для мобільного додатку.</p>
-                    <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
-                </div>
-            </div>
-
-            <!-- Картка учня 3 -->
-            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                <div class="student-card text-center">
-                    <img src="/api/placeholder/200/200" class="student-avatar mx-auto" alt="Аватар учня">
-                    <h4>Богдан С.</h4>
-                    <p>Технічно обдарований учень, який швидко опановує нові технології. Вже встиг створити власний навчальний блог та landing page.</p>
-                    <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
-                </div>
-            </div>
+      <h2
+        style="font-size: 42px"
+        class="section-title animate__animated animate__fadeIn"
+      >
+        Наші талановиті учні
+      </h2>
+      <div class="row">
+        <!-- Картка учня 1 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="student-card text-center">
+            <img
+              src="student-1.png"
+              class="student-avatar mx-auto"
+              alt="Аватар учня"
+            />
+            <h4>Артур Семенов</h4>
+            <p>
+              Надзвичайно творчий та цілеспрямований учень. За час навчання
+              створив власне портфоліо та два мінімальних проєкти. Виявляє
+              великий інтерес до Frontend розробки.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
+          </div>
         </div>
+
+        <!-- Картка учня 2 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="student-card text-center">
+            <img
+              src="student-2.png"
+              class="student-avatar mx-auto"
+              alt="Аватар учня"
+            />
+            <h4>Кирило Данильченко</h4>
+            <p>
+              Надзвичайно креативна особистість з чудовим відчуттям дизайну. Під
+              час курсу розробила унікальний дизайн-макет для мобільного
+              додатку.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
+          </div>
+        </div>
+
+        <!-- Картка учня 3 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="student-card text-center">
+            <img
+              src="student-3.png"
+              class="student-avatar mx-auto"
+              alt="Аватар учня"
+            />
+            <h4>Аліна Леміш</h4>
+            <p>
+              Технічно обдарований учень, який швидко опановує нові технології.
+              Вже встиг створити власний навчальний блог та landing page.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="student-card text-center">
+            <img
+              src="student-4.png"
+              class="student-avatar mx-auto"
+              alt="Аватар учня"
+            />
+            <h4>Андрій Мірошниченко</h4>
+            <p>
+              Технічно обдарований учень, який швидко опановує нові технології.
+              Вже встиг створити власний навчальний блог та landing page.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="student-card text-center">
+            <img
+              src="student-5.png"
+              class="student-avatar mx-auto"
+              alt="Аватар учня"
+            />
+            <h4>Микита Хом'як</h4>
+            <p>
+              Технічно обдарований учень, який швидко опановує нові технології.
+              Вже встиг створити власний навчальний блог та landing page.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Персональний сайт</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Секція Frontend -->
     <section class="container my-5">
-        <h2 class="section-title animate__animated animate__fadeIn">Майбутній Frontend курс</h2>
-        <div class="row">
-            <div class="col-md-3 mb-3" data-aos="fade-up">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="tech-icon mx-auto d-block" alt="JavaScript">
-                    <h4>JavaScript</h4>
-                    <p>Поглиблене вивчення інтерактивності, DOM-маніпуляцій, асинхронного програмування та сучасних ES6+ можливостей.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="tech-icon mx-auto d-block" alt="Git">
-                    <h4>Git</h4>
-                    <p>Вивчення контролю версій, роботи з гілками, злиття коду та професійного підходу до розробки.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="tech-icon mx-auto d-block" alt="Bootstrap">
-                    <h4>Bootstrap</h4>
-                    <p>Створення адаптивних та стильних інтерфейсів з використанням потужної CSS-бібліотеки.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="tech-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="tech-icon mx-auto d-block" alt="Deployment">
-                    <h4>Deployment</h4>
-                    <p>Вивчення Vercel, Netlify для простого та швидкого розгортання веб-проєктів.</p>
-                </div>
-            </div>
+      <h2
+        style="font-size: 42px"
+        class="section-title animate__animated animate__fadeIn"
+      >
+        Майбутній курс - <span class="future-course">Frontend</span>
+      </h2>
+      <div class="row">
+        <!-- HTML -->
+        <div class="col-md-3 mb-3" data-aos="fade-up">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="HTML"
+            />
+            <h4>HTML</h4>
+            <p>
+              Основа структури веб-сторінок: створення семантичної розмітки та
+              організація контенту.
+            </p>
+          </div>
         </div>
+
+        <!-- CSS -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="CSS"
+            />
+            <h4>CSS</h4>
+            <p>
+              Стилізація веб-сторінок: адаптивний дизайн, анімації та
+              використання сучасних технік.
+            </p>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="JavaScript"
+            />
+            <h4>JavaScript</h4>
+            <p>
+              Мова програмування для створення інтерактивних елементів та
+              динамічного контенту.
+            </p>
+          </div>
+        </div>
+
+        <!-- Git -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Git"
+            />
+            <h4>Git</h4>
+            <p>
+              Контроль версій для командної роботи над проектами та відстеження
+              змін у коді.
+            </p>
+          </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="col-md-3 mb-3" data-aos="fade-up">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="GitHub"
+            />
+            <h4>GitHub</h4>
+            <p>
+              Хостинг для зберігання коду з можливістю співпраці, керування
+              гілками та випусків.
+            </p>
+          </div>
+        </div>
+
+        <!-- Terminal -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Terminal"
+            />
+            <h4>Terminal</h4>
+            <p>
+              Основні команди для роботи з файловою системою та налаштування
+              проектів через CLI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Figma -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Figma"
+            />
+            <h4>Figma</h4>
+            <p>
+              Інструмент для розробки UI/UX-дизайну, створення макетів і
+              прототипування.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vercel -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Vercel"
+            />
+            <h4>Vercel</h4>
+            <p>
+              Сервіс для швидкого розгортання фронтенд-проектів з підтримкою
+              CI/CD.
+            </p>
+          </div>
+        </div>
+
+        <!-- Netlify -->
+        <div class="col-md-3 mb-3" data-aos="fade-up">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Netlify"
+            />
+            <h4>Netlify</h4>
+            <p>
+              Просте розгортання сайтів з автоматизацією деплою та інтеграцією з
+              Git.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              class="tech-icon mx-auto d-block"
+              alt="Bootstrap"
+            />
+            <h4>Bootstrap</h4>
+            <p>
+              Фреймворк для швидкої розробки адаптивних інтерфейсів за допомогою
+              готових компонентів.
+            </p>
+          </div>
+        </div>
+
+        <!-- Google Analytics -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img
+              src="google-analytics.png"
+              class="tech-icon mx-auto d-block"
+              alt="Google Analytics"
+            />
+            <h4>Google Analytics</h4>
+            <p>
+              Інструмент для відстеження відвідуваності, поведінки користувачів
+              та ефективності сайтів.
+            </p>
+          </div>
+        </div>
+
+        <!-- Miro -->
+        <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="tech-card">
+            <img src="miro.png" class="tech-icon mx-auto d-block" alt="Miro" />
+            <h4>Miro</h4>
+            <p>
+              Колаборативний інструмент для створення діаграм, дорожніх карт та
+              брейнштормінгу.
+            </p>
+          </div>
+        </div>
+
+        <!-- Trello -->
+        <div class="col-md-3 mb-3" data-aos="fade-up">
+          <div class="tech-card">
+            <img
+              src="trello.png"
+              class="tech-icon mx-auto d-block"
+              alt="Trello"
+            />
+            <h4>Trello</h4>
+            <p>
+              Інструмент для управління завданнями та проектами, що базується на
+              системі канбан-дошок.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Футер -->
     <footer class="bg-light text-center py-3">
-        <p>&copy; 2024 | Logika</p>
+      <p style="font-size: 20px">&copy; 2024 | Logika</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
-</body>
+  </body>
 </html>

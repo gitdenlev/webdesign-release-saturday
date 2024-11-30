@@ -1,0 +1,129 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+/* Збільшення тексту заголовків і описів */
+.tech-card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tech-card p {
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Уніфікація розмірів карток */
+.tech-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tech-icon {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Уніфікація висоти колонок для однакової висоти карток */
+.row > div {
+  display: flex;
+  align-items: stretch;
+}
+
+.tech-card:hover {
+  transform: scale(1.05);
+}
+
+.student-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  height: 100%;
+  position: relative;
+}
+
+.student-card a {
+  font-size: 20px;
+}
+
+.student-card img {
+  margin-bottom: 15px;
+}
+
+.student-card a.stretched-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.student-card p {
+  z-index: 2;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.student-card h4 {
+  z-index: 2;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.student-avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.future-course {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+
+  /* Додаємо анімацію переливання */
+  background: linear-gradient(45deg, #3494e6, #ec6ead, #3494e6);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
